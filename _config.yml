@@ -14,7 +14,7 @@ author:
   bio      : "some maths stuff"
   location : "Paris, France - Geneva, Switzerland"
   employer : "BS in Math — Sorbonne University"
-  email    :
+  email    : 
 
 include:
   - _pages
@@ -32,6 +32,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-seo-tag
 
 whitelist:
   - jekyll-feed
@@ -40,6 +41,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-seo-tag
 
 defaults:
   - scope: { path: "", type: pages }
