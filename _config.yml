@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "fr-FR"
 site_theme               : "default" # "default" ou "air"
-title                    : "Gianni — Mathématiques"
+title                    : "Gianni B — Mathématiques"
 title_separator          : "-"
 name                     : &name "Gianni Blaising"
 description              : &description "Portfolio académique — L3 Mathématiques (Sorbonne Université)"
