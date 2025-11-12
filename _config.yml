@@ -11,9 +11,9 @@ repository  : "116500LN/116500LN.github.io"
 author:
   avatar   : "profile.png"
   name     : "G B"
-  bio      : "Site minimal, en construction."
-  location : "Paris, France<br>Geneva, Switzerland"
-  employer : "Sorbonne Université<br>L3 Mathématiques"
+  bio      : "some maths stuff"
+  location : "Paris, France - Geneva, Switzerland"
+  employer : "BSc in maths at Sorbonne"
   email    : 
 
 include:

@@ -1,14 +1,11 @@
-# Patch: avatar + page Guide (test)
+# Patch: home cleanup + sidebar text + remove footer
 
-Contenu:
-- `images/profile.png` (PNG 400x400)
-- `_pages/guide.md` (page de test affichant l'image)
+Files:
+- `index.html` — clears home body text (keeps only the title "Accueil").
+- `_config.yml` — sidebar: bio="some maths stuff", location="Paris, France - Geneva, Switzerland", employer="BSc in maths at Sorbonne".
+- `_includes/footer.html` — empty to remove the site footer (theme include override).
 
-Installation:
-1) Sur GitHub → **Add file → Upload files**.
-2) **Déposez le *contenu* de ce ZIP** à la racine du dépôt (ne chargez pas le ZIP tel quel). Acceptez de remplacer `images/profile.png` s'il existe.
-3) Commit → vérifiez `Actions` (build verte) → ouvrez `/guide/` et `Ctrl+F5`.
-
-Si l'image apparaît sur `/guide/` mais pas dans la barre latérale, ajoutez dans `_config.yml` :
-  author:
-    avatar: "profile.png"
+Install:
+1) GitHub → Add file → Upload files.
+2) Upload the **contents** of this ZIP at the **repository root** (preserving folders).
+3) Accept replacements → Commit → check Actions → hard refresh the site.
