@@ -1,18 +1,16 @@
-# ZIP — Sections 'lorem ipsum' + Nom = "G B"
+# Avatar Patch — AcademicPages
 
-Ce pack :
-- crée/écrase les pages de section (Publications, Talks, Teaching, Portfolio, Blog Posts, CV, Guide) pour éviter les 404 et afficher "lorem ipsum",
-- met à jour le nom global en "G B",
-- règle la localisation : "Paris, France · Geneva, Switzerland",
-- ajoute "BS maths Sorbonne University" sur la page d'accueil.
+This patch adds your avatar at `images/profile.png` (PNG, 400x400).
+Minimal Mistakes/AcademicPages expects `author.avatar: "profile.png"` in `_config.yml`
+and reads it from the `images/` folder.
 
-## Installation
-1. Dans `116500LN/116500LN.github.io`, cliquez **Add file → Upload files**.
-2. Déposez le **contenu** de ce ZIP à la **racine** du dépôt (acceptez de remplacer).
-3. **Commit changes** puis vérifiez **Actions → pages-build-deployment** (vert).
-4. Hard refresh sur `https://116500ln.github.io/` (Ctrl+F5).
+## Install
+1. Open `116500LN/116500LN.github.io` on GitHub → **Add file → Upload files**.
+2. Upload the contents of this ZIP at the repository root (it will create/replace `images/profile.png`). Accept replacement if prompted.
+3. Commit. Then open the site and hard refresh (Ctrl+F5).
 
-## Notes
-- Les pages utilisent `layout: single` → pas d'agrégation automatique de collections.
-- Le menu est dans `_data/navigation.yml` et correspond à la capture (ordre et libellés).
-
+## If avatar doesn't show
+- Ensure `_config.yml` contains:
+  author:
+    avatar: "profile.png"
+- Clear cache or wait for the Pages build to finish (Actions → pages-build-deployment).
