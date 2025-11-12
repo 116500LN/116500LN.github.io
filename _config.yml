@@ -12,11 +12,10 @@ author:
   avatar   : "profile.png"
   name     : "G B"
   bio      : "Site minimal, en construction."
-  location : "Paris, France · Geneva, Switzerland"
-  employer : "Sorbonne Université — L3 Mathématiques"
+  location : "Paris, France<br>Geneva, Switzerland"
+  employer : "Sorbonne Université<br>L3 Mathématiques"
   email    : 
 
-# >>> IMPORTANT <<< ensure Jekyll processes pages in the _pages folder
 include:
   - _pages
   - files
