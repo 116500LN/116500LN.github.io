@@ -1,16 +1,14 @@
-# Avatar Patch — AcademicPages
+# Patch: avatar + page Guide (test)
 
-This patch adds your avatar at `images/profile.png` (PNG, 400x400).
-Minimal Mistakes/AcademicPages expects `author.avatar: "profile.png"` in `_config.yml`
-and reads it from the `images/` folder.
+Contenu:
+- `images/profile.png` (PNG 400x400)
+- `_pages/guide.md` (page de test affichant l'image)
 
-## Install
-1. Open `116500LN/116500LN.github.io` on GitHub → **Add file → Upload files**.
-2. Upload the contents of this ZIP at the repository root (it will create/replace `images/profile.png`). Accept replacement if prompted.
-3. Commit. Then open the site and hard refresh (Ctrl+F5).
+Installation:
+1) Sur GitHub → **Add file → Upload files**.
+2) **Déposez le *contenu* de ce ZIP** à la racine du dépôt (ne chargez pas le ZIP tel quel). Acceptez de remplacer `images/profile.png` s'il existe.
+3) Commit → vérifiez `Actions` (build verte) → ouvrez `/guide/` et `Ctrl+F5`.
 
-## If avatar doesn't show
-- Ensure `_config.yml` contains:
+Si l'image apparaît sur `/guide/` mais pas dans la barre latérale, ajoutez dans `_config.yml` :
   author:
     avatar: "profile.png"
-- Clear cache or wait for the Pages build to finish (Actions → pages-build-deployment).
