@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Guide"
+title: "Deprecated"
 permalink: /guide/
-author_profile: true
+published: false
 ---

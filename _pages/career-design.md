@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Blog"
-permalink: /blog/
+title: "Career Design"
+permalink: /career-design/
 author_profile: true
 sidebar:
   nav: "docs"

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Talks"
+title: "Deprecated"
 permalink: /talks/
-author_profile: true
+published: false
 ---

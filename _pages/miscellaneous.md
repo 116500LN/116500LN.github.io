@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Blog"
-permalink: /blog/
+title: "Miscellaneous"
+permalink: /miscellaneous/
 author_profile: true
 sidebar:
   nav: "docs"

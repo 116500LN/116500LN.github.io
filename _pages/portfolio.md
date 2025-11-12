@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Portfolio"
+title: "Deprecated"
 permalink: /portfolio/
-author_profile: true
+published: false
 ---

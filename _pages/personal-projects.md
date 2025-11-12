@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Blog"
-permalink: /blog/
+title: "Personal Projects"
+permalink: /personal-projects/
 author_profile: true
 sidebar:
   nav: "docs"

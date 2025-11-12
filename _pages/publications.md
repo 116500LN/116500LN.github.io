@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Publications"
+title: "Deprecated"
 permalink: /publications/
-author_profile: true
+published: false
 ---

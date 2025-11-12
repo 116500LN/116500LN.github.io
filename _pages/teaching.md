@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Teaching"
+title: "Deprecated"
 permalink: /teaching/
-author_profile: true
+published: false
 ---
