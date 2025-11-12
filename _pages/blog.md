@@ -1,9 +1,8 @@
 ---
 layout: single
-title: "Guide"
-permalink: /guide/
+title: "Blog Posts"
+permalink: /blog/
 author_profile: true
 sidebar:
   nav: "docs"
 ---
-

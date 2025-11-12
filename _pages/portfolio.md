@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Guide"
-permalink: /guide/
+title: "Portfolio"
+permalink: /portfolio/
 author_profile: true
 sidebar:
   nav: "docs"

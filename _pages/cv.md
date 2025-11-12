@@ -1,64 +1,56 @@
 ---
-layout: archive
+layout: single
 title: "CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
+sidebar:
+  nav: "docs"
 ---
 
-{% include base_path %}
+# G B
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Professional Summary
+Applied mathematics enthusiast with a strong interest in topology and geometric deep learning methods.
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Work History
+- Founder – Off-Market High-End Watch Trading Network, 2021 – Current
+- Private Activity – Switzerland
+- Established and grew a private resale network for high-end watches in the Geneva area.
+- Ensured integrity, discretion, and traceability throughout the entire chain of transactions.
+- Guaranteed the authenticity of all models traded.
+- Maintained and nurtured relationships with a selective and demanding clientele.
+- Real Estate Broker Assistant, 07/2022 – 08/2023
+- Global-Immo – Geneva
+- Designed and implemented a property search optimization algorithm, increasing hunter productivity by 10–15%.
+- Contributed to strengthening the agency’s market reputation in Geneva.
+- Drafted real estate contracts, protecting customer interests.
+- Collaborated on transactions totaling over CHF 7 million, mainly in Geneva and Cologny.
+- Led marketing efforts, including the creation of visually appealing real estate advertisements.
+- Directly contributed to the successful closing of several high-value deals.
+- Mathematics Tutor, 09/2021 – 06/2022
+- Self-employed – France/Switzerland
+- Helped students achieve an average improvement of 40% in mathematics grades.
+- Provided regular tutoring to over 20 students.
+- Received consistent positive feedback and recommendations from parents.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Skills and Coursework
+- Advanced Linear Algebra, Differential Calculus, Geometry, Group Theory, Algebra on Rings and Fields
+- Probability and Statistics, Measure and Integration Theory, Ordinary Differential Equations (ODEs)
+- Basic in C++ and Python programming (object-oriented design, data structures and algorithms)
+- Experience in client relationship management, negotiation, and contract drafting (real estate and private network)
+- Ability to work in a highly discreet environment, ensuring integrity and confidentiality
+- 1
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Education
+- Bachelor’s degree: Mathematics with Computer Science, 09/2024 – 05/2026
+- Sorbonne University, Paris
+- Focus on theoretical mathematics
+- First year of dual bachelor’s degree: Mathematics & Computer Science, High Honours (4/4 GPA), 09/2022 –
+- 05/2023
+- University of Lyon 1 – Ranked 8/148 in the class of 2023
+- Baccalaur ´eat: Major Mathematics, 09/2018 – 07/2021 with honours
+- International High School – Ferney-V oltaire
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Languages
+- French: Native
+- 2 

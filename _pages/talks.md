@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Guide"
-permalink: /guide/
+title: "Talks"
+permalink: /talks/
 author_profile: true
 sidebar:
   nav: "docs"
