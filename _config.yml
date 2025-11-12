@@ -1,259 +1,27 @@
-# Basic Site Settings
-locale                   : "fr-FR"
-site_theme               : "default"
-title                    : "Gianni Blaising — Mathématiques"
-title_separator          : "-"
-name                     : &name "Gianni Blaising"
-description              : &description "Portfolio académique — L3 Mathématiques (Sorbonne Université)"
-url                      : "https://116500ln.github.io"
-baseurl                  : ""
-repository               : "116500LN/116500LN.github.io"
+locale      : "fr-FR"
+site_theme  : "default"
+title       : "Gianni Blaising — Mathématiques"
+title_separator: "-"
+name        : &name "Gianni Blaising"
+description : &description "Portfolio académique — L3 Mathématiques (Sorbonne Université)"
+url         : "https://116500ln.github.io"
+baseurl     : ""
+repository  : "116500LN/116500LN.github.io"
 
-# Site Author
 author:
-  avatar           : "profile.png"
-  name             : "Gianni Blaising"
-  pronouns         : 
-  bio              : "Étudiant en L3 Mathématiques (Sorbonne Université). Intérêts : mesure et probabilités, topologie, analyse numérique, geometric deep learning (GDL) et TDA."
-  location         : "Paris, France"
-  employer         : "Sorbonne Université — L3 Mathématiques"
-  uri              : 
-  email            : 
+  avatar   : "profile.png"
+  name     : "Gianni Blaising"
+  bio      : "Site minimal, en construction."
+  location : "Paris, France"
+  employer : "Sorbonne Université — L3 Mathématiques"
+  email    : 
 
-  academia         : 
-  arxiv            : 
-  googlescholar    : 
-  inspire-hep      : 
-  impactstory      : 
-  orcid            : 
-  semantic         : 
-  pubmed           : 
-  researchgate     : 
-  scopus           : 
-
-  bitbucket        : 
-  codepen          : 
-  dribbble         : 
-  github           : 
-  kaggle           : 
-  stackoverflow    : 
-
-  artstation       : 
-  bluesky          : 
-  facebook         : 
-  flickr           : 
-  foursquare       : 
-  goodreads        : 
-  google_plus      : 
-  keybase          : 
-  instagram        : 
-  lastfm           : 
-  linkedin         : 
-  mastodon         : 
-  medium           : 
-  pinterest        : 
-  soundcloud       : 
-  steam            : 
-  telegram         : 
-  tumblr           : 
-  twitter          : 
-  vine             : 
-  weibo            : 
-  wikipedia        : 
-  xing             : 
-  youtube          : 
-  zhihu            : 
-
-publication_category:
-  books:
-    title: "Books"
-  manuscripts:
-    title: "Journal Articles"    
-  conferences:
-    title: "Conference Papers"
-
-teaser                   : 
-breadcrumbs              : false
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled"
-talkmap_link             : false
-comments:
-  provider               : 
-  disqus:
-    shortname            :
-  discourse:
-    server               : 
-  facebook:
-    appid                :
-    num_posts            : 
-    colorscheme          : 
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601"
-atom_feed:
-  hide                   : false
-  path                   : 
-
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-twitter:
-  username               : &twitter
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : 
-og_description           : 
-social:
-  type                   : Person
-  name                   : "Gianni Blaising"
-  links: []
-
-analytics:
-  provider               : "false"
-  google:
-    tracking_id          :
-
-include:
-  - .htaccess
-  - _pages
-  - files
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .github
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
-  - Dockerfile
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - local
-  - log
-  - node_modules
-  - package.json*
-  - Rakefile
-  - README
-  - tmp
-  - vendor
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
-permalink: /:categories/:title/
+words_per_minute: 160
+future: true
+read_more: "disabled"
 timezone: Europe/Paris
 
+# Keep plugins identical to template for compatibility
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -270,14 +38,13 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# Defaults (minimal)
+defaults:
+  - scope: { path: "", type: pages }
+    values: { layout: single, author_profile: true }
+  - scope: { path: "", type: posts }
+    values: { layout: single, author_profile: true, comments: false }
 
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+permalink: /:categories/:title/
+markdown: kramdown
+highlighter: rouge
