@@ -1,1 +1,5 @@
-{% include head/custom.html %}
+{%- comment -%} Minimal Mistakes compatible head override that restores CSS {%- endcomment -%}
+{%- include head/seo.html -%}
+<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+{%- include head/custom.html -%}

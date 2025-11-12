@@ -1,0 +1,10 @@
+# Minimal defaults to force left docs nav globally (adjusts only 'defaults' block)
+defaults:
+  - scope: { path: "", type: pages }
+    values:
+      sidebar:
+        nav: "docs"
+  - scope: { path: "", type: posts }
+    values:
+      sidebar:
+        nav: "docs"

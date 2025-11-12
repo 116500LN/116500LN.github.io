@@ -1,14 +1,36 @@
-# Patch: Replace sections (keep only CV + Blog/Career Design/Personal Projects/Miscellaneous)
+# Visual Fix Patch — restore theme styling + left menu only
 
-This patch:
-- Updates the left menu to only show: Blog, Career Design, Personal Projects, Miscellaneous, CV.
-- Adds minimal pages for these new sections in `_pages/`.
-- Unpublishes previous sections (Publications, Talks, Teaching, Portfolio, Guide) so they disappear (no URLs built).
-- Keeps the left-menu-only layout (masthead removed, footer removed).
+This patch fixes the "unstyled" pages by restoring a proper `_includes/head.html` that loads the theme CSS,
+keeps the top navbar removed and footer removed, and keeps the left docs-style menu everywhere.
+It also ensures only the requested sections exist (Blog, Career Design, Personal Projects, Miscellaneous, CV).
+
+## What to upload
+- `_includes/head.html` (restores CSS)
+- `_includes/masthead.html` (empty; no top bar)
+- `_includes/footer.html` (empty; no footer)
+- `_includes/head/custom.html` and `assets/css/custom-fix.css` (optional sticky sidebar)
+- `_data/navigation.yml` (docs-only menu with the requested sections)
+- `_pages/*.md` (fresh stubs with `sidebar.nav: docs`)
+- `index.html` (title only; inherits left nav)
+
+## Optional: merge defaults
+If your `_config.yml` doesn't already set the docs sidebar globally, add this block to the end of it:
+```
+defaults:
+  - scope: { path: "", type: pages }
+    values:
+      sidebar:
+        nav: "docs"
+  - scope: { path: "", type: posts }
+    values:
+      sidebar:
+        nav: "docs"
+```
+(We ship it as `_config.defaults.only.yml` so you can copy/paste without overwriting your other settings.)
 
 ## Install
-1) GitHub → Add file → Upload files.
-2) Upload the **contents** of this ZIP at the **repository root** (keep folders).
-3) Accept replacements → Commit → Actions build → Hard refresh (Ctrl+F5).
+1) GitHub → **Add file → Upload files** → upload the **contents** of this ZIP at the **repo root** (preserve folders).
+2) Accept replacements → Commit → **Actions** build → **Ctrl+F5** on the site.
+3) Test `/cv/` and the other sections; they should be fully styled, with only the left menu.
 
-If you want me to also delete the old files physically from the repo, say the word and I’ll send a "cleanup" patch with `git rm` instructions you can follow via the UI.
+If any page is still unstyled, it's likely `_includes/head.html` wasn't replaced or the CSS path is blocked.
