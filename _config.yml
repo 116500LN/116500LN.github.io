@@ -1,35 +1,25 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
-
 # Basic Site Settings
 locale                   : "fr-FR"
-site_theme               : "default" # "default" ou "air"
-title                    : "Gianni B — Mathématiques"
+site_theme               : "default"
+title                    : "Gianni Blaising — Mathématiques"
 title_separator          : "-"
 name                     : &name "Gianni Blaising"
 description              : &description "Portfolio académique — L3 Mathématiques (Sorbonne Université)"
-url                      : https://<username>.github.io  # Remplace par ton URL GitHub Pages si tu veux
-baseurl                  : "" # sous-chemin éventuel (vide si user.github.io)
-repository               : "<username>/<username>.github.io" # Remplace quand tu connaîtras le repo exact
+url                      : "https://116500ln.github.io"
+baseurl                  : ""
+repository               : "116500LN/116500LN.github.io"
 
-# Site Author (contenu de la barre latérale)
+# Site Author
 author:
-  # Biographic information
   avatar           : "profile.png"
   name             : "Gianni Blaising"
   pronouns         : 
-  bio              : "Étudiant en L3 Mathématiques (Sorbonne Université). Intérêts : mesure & probabilités, topologie, analyse numérique, geometric deep learning (GDL) & TDA."
+  bio              : "Étudiant en L3 Mathématiques (Sorbonne Université). Intérêts : mesure et probabilités, topologie, analyse numérique, geometric deep learning (GDL) et TDA."
   location         : "Paris, France"
   employer         : "Sorbonne Université — L3 Mathématiques"
   uri              : 
-  email            :  # Laisse vide si tu ne veux pas l’exposer
+  email            : 
 
-  # Academic websites (laisser vide tant que tu n’as pas de profils publics)
   academia         : 
   arxiv            : 
   googlescholar    : 
@@ -41,15 +31,13 @@ author:
   researchgate     : 
   scopus           : 
 
-  # Repositories and software development
   bitbucket        : 
   codepen          : 
   dribbble         : 
-  github           :  # renseigne ton pseudo GitHub quand tu veux
+  github           : 
   kaggle           : 
   stackoverflow    : 
 
-  # Social media (laisse vide pour l’instant)
   artstation       : 
   bluesky          : 
   facebook         : 
@@ -76,16 +64,14 @@ author:
   youtube          : 
   zhihu            : 
 
-# Publication Category
 publication_category:
   books:
-    title: 'Books'
+    title: "Books"
   manuscripts:
-    title: 'Journal Articles'    
+    title: "Journal Articles"    
   conferences:
-    title: 'Conference Papers'
+    title: "Conference Papers"
 
-# Site Settings
 teaser                   : 
 breadcrumbs              : false
 words_per_minute         : 160
@@ -122,13 +108,11 @@ atom_feed:
   hide                   : false
   path                   : 
 
-# SEO Related
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
-# Social Sharing
 twitter:
   username               : &twitter
 facebook:
@@ -142,13 +126,11 @@ social:
   name                   : "Gianni Blaising"
   links: []
 
-# Analytics
 analytics:
   provider               : "false"
   google:
     tracking_id          :
 
-# Reading Files
 include:
   - .htaccess
   - _pages
@@ -186,14 +168,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -204,7 +184,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Collections
 collections:
   teaching:
     output: true
@@ -219,7 +198,6 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-# Defaults
 defaults:
   - scope:
       path: ""
@@ -269,18 +247,13 @@ defaults:
       author_profile: true
       share: true
 
-# Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed
 
-# Outputting
 permalink: /:categories/:title/
-# paginate: 5
-# paginate_path: /page:num/
-timezone: Europe/Paris  # ← adapté
+timezone: Europe/Paris
 
-# Plugins
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -289,7 +262,6 @@ plugins:
   - jekyll-redirect-from
   - jemoji
 
-# Mimic GitHub Pages with --safe
 whitelist:
   - jekyll-feed
   - jekyll-gist
@@ -298,7 +270,6 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-# Archives
 category_archive:
   type: liquid
   path: /categories/
@@ -306,7 +277,6 @@ tag_archive:
   type: liquid
   path: /tags/
 
-# HTML Compression
 compress_html:
   clippings: all
   ignore:
