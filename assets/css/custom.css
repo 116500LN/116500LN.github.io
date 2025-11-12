@@ -1,0 +1,6 @@
+/* Make sidebar sticky and remove any top offset left by masthead */
+@media (min-width: 80em) {
+  .sidebar__inner { position: sticky; top: 1.5rem; }
+}
+.page__content { margin-top: 0; }
+.initial-content { padding-top: 0; }

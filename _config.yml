@@ -41,11 +41,21 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
+# Make the left nav appear everywhere by default
 defaults:
   - scope: { path: "", type: pages }
-    values: { layout: single, author_profile: true }
+    values:
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: "docs"
   - scope: { path: "", type: posts }
-    values: { layout: single, author_profile: true, comments: false }
+    values:
+      layout: single
+      author_profile: true
+      comments: false
+      sidebar:
+        nav: "docs"
 
 permalink: /:categories/:title/
 markdown: kramdown
