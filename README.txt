@@ -1,26 +1,18 @@
-# Minimal Ready Pack — AcademicPages (sections vides, home propre)
+# ZIP — Sections 'lorem ipsum' + Nom = "G B"
 
-**Objectif** : 
-- Toutes les sections restent cliquables (Publications, Talks, Teaching, Portfolio, Blog, CV).
-- La page d’accueil **ne** montre **aucun** tutoriel du template.
-- Aucun contenu listé (sections vides), site prêt pour vos ajouts.
+Ce pack :
+- crée/écrase les pages de section (Publications, Talks, Teaching, Portfolio, Blog Posts, CV, Guide) pour éviter les 404 et afficher "lorem ipsum",
+- met à jour le nom global en "G B",
+- règle la localisation : "Paris, France · Geneva, Switzerland",
+- ajoute "BS maths Sorbonne University" sur la page d'accueil.
 
-## Fichiers à déposer (remplacement recommandé)
-- `index.html` (remplace la home du template)
-- `_data/navigation.yml`
-- `_pages/*.md` (stubs vides)
-- `_config.yml` (minimal, personnalisé)
-- `scripts/clean_sections.sh` (optionnel)
+## Installation
+1. Dans `116500LN/116500LN.github.io`, cliquez **Add file → Upload files**.
+2. Déposez le **contenu** de ce ZIP à la **racine** du dépôt (acceptez de remplacer).
+3. **Commit changes** puis vérifiez **Actions → pages-build-deployment** (vert).
+4. Hard refresh sur `https://116500ln.github.io/` (Ctrl+F5).
 
-## Procédure (UI GitHub)
-1. Ouvrez `116500LN/116500LN.github.io` → **Add file → Upload files**.
-2. Déposez **tout le contenu** de ce dossier à la racine. Acceptez de **remplacer** les fichiers existants.
-3. (Optionnel) Supprimez les anciens items des collections : `_publications/*`, `_talks/*`, `_teaching/*`, `_portfolio/*`, `_posts/*`.
-4. **Commit changes** → Vérifiez **Actions** (workflow `pages-build-deployment` en vert) → Hard refresh du site.
+## Notes
+- Les pages utilisent `layout: single` → pas d'agrégation automatique de collections.
+- Le menu est dans `_data/navigation.yml` et correspond à la capture (ordre et libellés).
 
-## Procédure (ligne de commande)
-```bash
-# À la racine du dépôt cloné
-bash scripts/clean_sections.sh
-git add -A && git commit -m "Clean sections (empty stubs)" && git push
-```

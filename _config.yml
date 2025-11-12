@@ -1,8 +1,8 @@
 locale      : "fr-FR"
 site_theme  : "default"
-title       : "Gianni Blaising — Mathématiques"
+title       : "G B — Mathématiques"
 title_separator: "-"
-name        : &name "Gianni Blaising"
+name        : &name "G B"
 description : &description "Portfolio académique — L3 Mathématiques (Sorbonne Université)"
 url         : "https://116500ln.github.io"
 baseurl     : ""
@@ -10,9 +10,9 @@ repository  : "116500LN/116500LN.github.io"
 
 author:
   avatar   : "profile.png"
-  name     : "Gianni Blaising"
+  name     : "G B"
   bio      : "Site minimal, en construction."
-  location : "Paris, France"
+  location : "Paris, France · Geneva, Switzerland"
   employer : "Sorbonne Université — L3 Mathématiques"
   email    : 
 
