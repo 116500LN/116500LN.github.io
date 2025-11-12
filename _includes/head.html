@@ -1,5 +1,5 @@
-{%- comment -%} Minimal Mistakes compatible head override that restores CSS {%- endcomment -%}
-{%- include head/seo.html -%}
+{%- comment -%} Safe head override: uses jekyll-seo-tag and loads theme CSS {%- endcomment -%}
+{%- seo -%}
 <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 {%- include head/custom.html -%}
