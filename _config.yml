@@ -9,7 +9,7 @@ baseurl     : ""
 repository  : "116500LN/116500LN.github.io"
 
 author:
-  avatar   : "profile.png"
+  avatar   : "/images/profile-pp.png"
   name     : "G B"
   bio      : "Site minimal, en construction."
   location : "Paris, France<br>Geneva, Switzerland"
