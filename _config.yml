@@ -16,6 +16,11 @@ author:
   employer : "Sorbonne Université — L3 Mathématiques"
   email    : 
 
+# >>> IMPORTANT <<< ensure Jekyll processes pages in the _pages folder
+include:
+  - _pages
+  - files
+
 words_per_minute: 160
 future: true
 read_more: "disabled"
