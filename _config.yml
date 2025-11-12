@@ -1,24 +1,21 @@
-# === Site identity ===
 locale      : "fr-FR"
 site_theme  : "default"
 title       : "G B — Mathématiques"
 title_separator: "-"
 name        : &name "G B"
 description : &description "Portfolio académique — L3 Mathématiques (Sorbonne Université)"
-url         : "https://116500ln.github.io"   # IMPORTANT: fixes off-site links
-baseurl     : ""                              # root site
+url         : "https://116500ln.github.io"
+baseurl     : ""
 repository  : "116500LN/116500LN.github.io"
 
-# === Author (sidebar) ===
 author:
   avatar   : "profile.png"
   name     : "G B"
   bio      : "some maths stuff"
   location : "Paris, France - Geneva, Switzerland"
   employer : "BS in Math — Sorbonne University"
-  email    : 
+  email    :
 
-# === Build & theme ===
 include:
   - _pages
   - files
@@ -44,19 +41,20 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-# Enforce left docs nav everywhere
 defaults:
   - scope: { path: "", type: pages }
     values:
       layout: single
       author_profile: true
-      sidebar: { nav: "docs" }
+      sidebar:
+        nav: "docs"
   - scope: { path: "", type: posts }
     values:
       layout: single
       author_profile: true
       comments: false
-      sidebar: { nav: "docs" }
+      sidebar:
+        nav: "docs"
 
 permalink: /:categories/:title/
 markdown: kramdown
