@@ -21,7 +21,6 @@ future: true
 read_more: "disabled"
 timezone: Europe/Paris
 
-# Keep plugins identical to template for compatibility
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -38,7 +37,6 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-# Defaults (minimal)
 defaults:
   - scope: { path: "", type: pages }
     values: { layout: single, author_profile: true }

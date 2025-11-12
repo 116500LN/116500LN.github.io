@@ -1,22 +1,26 @@
-# Pack "clean / vierge" (AcademicPages)
+# Minimal Ready Pack — AcademicPages (sections vides, home propre)
 
-Ce pack remplace l'affichage par une page d'accueil vide et deux pages minimales (À propos, CV).
-Il **n'ajoute aucune publication, aucun post, aucune entrée de collections**.
+**Objectif** : 
+- Toutes les sections restent cliquables (Publications, Talks, Teaching, Portfolio, Blog, CV).
+- La page d’accueil **ne** montre **aucun** tutoriel du template.
+- Aucun contenu listé (sections vides), site prêt pour vos ajouts.
 
-## Déploiement
-1. Ouvrez le dépôt `116500LN/116500LN.github.io` sur GitHub.
-2. **Supprimez** le contenu des dossiers suivants s'ils existent, pour repartir de zéro :
-   - `_posts/*`
-   - `_publications/*`
-   - `_talks/*`
-   - `_teaching/*`
-   - `_portfolio/*`
-   - `files/*` (vous pourrez garder votre CV si vous en avez un)
-3. Cliquez **Add file → Upload files** et uploadez le contenu de ce pack à la **racine** du dépôt.
-4. `Commit changes`.
-5. Vérifiez l'onglet **Actions** (workflow `pages-build-deployment` en vert), puis rechargez `https://116500ln.github.io/` (Ctrl+F5).
+## Fichiers à déposer (remplacement recommandé)
+- `index.html` (remplace la home du template)
+- `_data/navigation.yml`
+- `_pages/*.md` (stubs vides)
+- `_config.yml` (minimal, personnalisé)
+- `scripts/clean_sections.sh` (optionnel)
 
-## Ajouts futurs
-- Ajoutez vos PDF dans `files/`.
-- Créez de nouvelles pages dans `_pages/`.
-- Réactivez les collections quand vous voudrez en créant les dossiers correspondants (`_publications`, etc.).
+## Procédure (UI GitHub)
+1. Ouvrez `116500LN/116500LN.github.io` → **Add file → Upload files**.
+2. Déposez **tout le contenu** de ce dossier à la racine. Acceptez de **remplacer** les fichiers existants.
+3. (Optionnel) Supprimez les anciens items des collections : `_publications/*`, `_talks/*`, `_teaching/*`, `_portfolio/*`, `_posts/*`.
+4. **Commit changes** → Vérifiez **Actions** (workflow `pages-build-deployment` en vert) → Hard refresh du site.
+
+## Procédure (ligne de commande)
+```bash
+# À la racine du dépôt cloné
+bash scripts/clean_sections.sh
+git add -A && git commit -m "Clean sections (empty stubs)" && git push
+```
